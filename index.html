@@ -4,379 +4,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ZayyLovesData — Business research, data and useful insights.">
-  <title>ZayyLovesData — Research & Data</title>
-
-  <style>
-    :root {
-      --background: #fafaf8;
-      --foreground: #242620;
-      --secondary: #777970;
-      --line: #e7e7e1;
-      --accent: #526b55;
-      --serif: Georgia, serif;
-      --sans: Arial, sans-serif;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--foreground);
-      font-family: var(--sans);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: inherit; }
-
-    .container {
-      width: min(1060px, calc(100% - 48px));
-      margin: auto;
-    }
-
-    header {
-      height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .brand {
-      font-family: var(--serif);
-      font-size: 22px;
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      gap: 30px;
-    }
-
-    nav a {
-      font-size: 13px;
-      color: var(--secondary);
-      text-decoration: none;
-    }
-
-    nav a:hover { color: var(--foreground); }
-
-    .hero {
-      min-height: 570px;
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      align-items: center;
-      gap: 70px;
-      padding: 70px 0;
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--serif);
-      font-weight: normal;
-      line-height: 1.15;
-    }
-
-    h1 {
-      font-size: clamp(46px, 6vw, 76px);
-      letter-spacing: -2px;
-      margin: 22px 0;
-    }
-
-    .hero-copy {
-      max-width: 430px;
-      color: var(--secondary);
-      font-size: 15px;
-    }
-
-    .portrait {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      background: #eeeee9;
-      display: grid;
-      place-items: center;
-      color: var(--secondary);
-      font-size: 12px;
-    }
-
-    .portrait img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-link {
-      display: inline-block;
-      margin-top: 25px;
-      font-size: 13px;
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent);
-      padding-bottom: 5px;
-    }
-
-    section {
-      padding: 85px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .section-title {
-      font-size: clamp(32px, 4vw, 48px);
-      margin: 12px 0 30px;
-    }
-
-    .about {
-      max-width: 690px;
-      color: var(--secondary);
-      font-size: 16px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 45px;
-      margin-top: 45px;
-    }
-
-    .service-number {
-      color: var(--accent);
-      font-size: 11px;
-    }
-
-    .service h3 {
-      font-size: 23px;
-      margin: 15px 0 10px;
-    }
-
-    .service p {
-      color: var(--secondary);
-      font-size: 13px;
-    }
-
-    .project {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
-      padding: 28px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .project h3 {
-      font-size: 25px;
-      margin: 0 0 8px;
-    }
-
-    .project p {
-      color: var(--secondary);
-      font-size: 13px;
-      margin: 0;
-    }
-
-    .project a {
-      font-size: 13px;
-      white-space: nowrap;
-    }
-
-    .contact {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .contact h2 {
-      font-size: 40px;
-      margin: 12px 0;
-    }
-
-    .contact a {
-      color: var(--accent);
-      font-size: 14px;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 25px 0;
-      color: var(--secondary);
-      font-size: 11px;
-    }
-
-    @media (max-width: 700px) {
-      .container { width: calc(100% - 36px); }
-
-      header { height: 68px; }
-
-      nav { gap: 15px; }
-      nav a:first-child { display: none; }
-
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        padding: 55px 0;
-      }
-
-      .portrait {
-        aspect-ratio: 4 / 3;
-      }
-
-      section { padding: 60px 0; }
-
-      .services {
-        grid-template-columns: 1fr;
-        gap: 25px;
-      }
-
-      .project, .contact {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .contact h2 { font-size: 34px; }
-    }
-  </style>
+  <meta name="description" content="Zainab provides business research, data organisation and analysis to help people make clearer decisions.">
+  <meta name="theme-color" content="#ffffff">
+  <title>ZayyLovesData | Business Research & Data</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <div class="container">
 
-    <header>
-      <a href="index.html" class="brand">ZayyLovesData.</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">ZayyLovesData<span>.</span></a>
 
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="research.html">Research</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
 
-    <main>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="research.html">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      <section class="hero" style="border:0; padding-top:0;">
-        <div>
-          <div class="eyebrow">Research · Data · Business</div>
+  <main>
 
-          <h1>Curious questions.<br>Clear answers.</h1>
+    <section class="hero">
+      <div class="hero-image">
+        <img
+          src="images/zainab.jpg"
+          alt="Portrait of Zainab, founder of ZayyLovesData"
+          width="810"
+          height="1080"
+          fetchpriority="high"
+        >
+      </div>
 
-          <p class="hero-copy">
-            I ask curious business questions and find data that answers them.
-            I turn information into research, useful insights and clearer
-            decisions.
-          </p>
+      <div class="hero-content">
+        <p class="intro-label">Business research & data</p>
 
-          <a href="research.html" class="hero-link">
-            Explore my work →
+        <h1>I find the data behind business questions.</h1>
+
+        <p class="hero-description">
+          I ask questions about businesses and markets, then find the
+          data that answers them. I turn what I find into research
+          people can use.
+        </p>
+
+        <div class="hero-actions">
+          <a href="research.html" class="button button-primary">
+            Explore my work
+          </a>
+
+          <a href="#contact" class="button button-secondary">
+            Get in touch
           </a>
         </div>
+      </div>
+    </section>
 
-        <div class="portrait">
-          <!-- Add Zainab's portrait here -->
-          <!-- <img src="images/zainab.jpg" alt="Zainab"> -->
-          Portrait
-        </div>
-      </section>
+    <section class="content-section about-section" id="about">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>Curiosity is where good research begins.</h2>
+      </div>
 
-      <section id="about">
-        <div class="eyebrow">01 — About</div>
+      <div class="section-body">
+        <p>
+          I am interested in understanding how businesses work,
+          what customers want and what the numbers reveal.
+        </p>
 
-        <h2 class="section-title">
-          A curious mind, guided by evidence.
-        </h2>
+        <p>
+          I enjoy asking questions, finding relevant information
+          and organising it into something clear and useful.
+          My goal is to help people understand a problem before
+          deciding what to do next.
+        </p>
+      </div>
+    </section>
 
-        <div class="about">
+    <section class="content-section services-section" id="services">
+      <div class="section-heading">
+        <p class="section-label">Services</p>
+        <h2>How I can help.</h2>
+      </div>
+
+      <div class="services-list">
+        <article class="service-item">
+          <h3>Business research</h3>
           <p>
-            I'm Zainab. I enjoy asking questions about businesses, people
-            and markets, then finding information that helps answer them.
+            Research into businesses, markets and competitors.
           </p>
-
-          <p>
-            Through research, data organisation and analysis, I make
-            information easier to understand and useful for decision-making.
-          </p>
-        </div>
-      </section>
-
-      <section id="services">
-        <div class="eyebrow">02 — What I do</div>
-
-        <h2 class="section-title">Research with purpose.</h2>
-
-        <div class="services">
-
-          <article class="service">
-            <div class="service-number">01</div>
-            <h3>Business research</h3>
-            <p>
-              Market research, competitor research and business discovery.
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-number">02</div>
-            <h3>Data organisation</h3>
-            <p>
-              Data gathering, cleaning, structuring and documentation.
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-number">03</div>
-            <h3>Analysis & reporting</h3>
-            <p>
-              Finding patterns and communicating useful findings clearly.
-            </p>
-          </article>
-
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="eyebrow">03 — Selected work</div>
-
-        <h2 class="section-title">Research & projects.</h2>
-
-        <article class="project">
-          <div>
-            <h3>ChatGPT use in Nigeria</h3>
-            <p>
-              Exploring consumer adoption and usage patterns, 2023–2026.
-            </p>
-          </div>
-
-          <a href="research.html">View project →</a>
         </article>
-      </section>
 
-      <section id="contact">
-        <div class="contact">
-          <div>
-            <div class="eyebrow">04 — Contact</div>
-            <h2>Let's explore a question.</h2>
-            <p class="hero-copy">
-              Have a research question or project in mind?
-            </p>
-          </div>
+        <article class="service-item">
+          <h3>Data organisation</h3>
+          <p>
+            Collecting, cleaning and organising information.
+          </p>
+        </article>
 
-          <a href="mailto:YOUR-EMAIL@example.com">
-            Get in touch →
-          </a>
+        <article class="service-item">
+          <h3>Analysis and reporting</h3>
+          <p>
+            Turning findings into clear reports and useful insights.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section research-section">
+      <div class="section-heading">
+        <p class="section-label">Selected work</p>
+        <h2>Questions worth investigating.</h2>
+      </div>
+
+      <div class="project-preview">
+        <div>
+          <p class="project-category">Research project</p>
+          <h3>ChatGPT use in Nigeria</h3>
+          <p>
+            Exploring how people use generative AI and what this
+            could mean for consumers and businesses.
+          </p>
         </div>
-      </section>
 
-    </main>
+        <a href="research.html" class="text-link">View project</a>
+      </div>
+    </section>
 
-    <footer>
-      © 2026 ZayyLovesData. All rights reserved.
-    </footer>
+    <section class="content-section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="section-label">Contact</p>
+        <h2>Have a question worth exploring?</h2>
+      </div>
 
-  </div>
+      <div class="section-body">
+        <p>
+          If you need help with research, data collection or analysis,
+          I would be happy to hear from you.
+        </p>
+
+        <a
+          class="contact-email"
+          href="mailto:YOUR-EMAIL@example.com"
+        >
+          Email me
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html">ZayyLovesData<span>.</span></a>
+    <p>© <span id="current-year"></span> ZayyLovesData</p>
+  </footer>
+
+  <!-- WhatsApp contact -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/2348101891930?text=Hello%20Zainab%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20make%20an%20enquiry."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact Zainab on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16.02 3C8.85 3 3.02 8.82 3.02 15.99c0 2.28.6 4.51 1.73 6.47L3 29l6.72-1.72a12.97 12.97 0 0 0 6.3 1.61h.01c7.17 0 13-5.83 13-13S23.2 3 16.02 3Zm0 23.68h-.01c-1.95 0-3.86-.52-5.53-1.51l-.4-.24-3.99 1.02 1.07-3.89-.26-.4a10.8 10.8 0 0 1-1.66-5.67c0-5.95 4.85-10.8 10.8-10.8 2.88 0 5.59 1.12 7.62 3.16a10.73 10.73 0 0 1 3.16 7.64c0 5.95-4.84 10.79-10.8 10.79Zm5.92-8.08c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.39-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.12 1.32 3.34c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.2 2.02.12.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.14-.3-.22-.62-.38Z"/>
+    </svg>
+  </a>
+
 </body>
 </html>
