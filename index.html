@@ -10,24 +10,18 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
 
   <header class="site-header">
     <a class="brand" href="index.html">ZayyLovesData<span>.</span></a>
-
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="navigation" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="research.html">Research</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
+
+  <nav class="main-navigation" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="research.html">Research</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <main>
 
@@ -54,18 +48,13 @@
         </p>
 
         <div class="hero-actions">
-          <a href="research.html" class="button button-primary">
-            Explore my work
-          </a>
-
-          <a href="#contact" class="button button-secondary">
-            Get in touch
-          </a>
+          <a href="research.html" class="button button-primary">Explore my work</a>
+          <a href="#contact" class="button button-secondary">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <section class="content-section about-section" id="about">
+    <section class="content-section" id="about">
       <div class="section-heading">
         <p class="section-label">About</p>
         <h2>Curiosity is where good research begins.</h2>
@@ -76,7 +65,6 @@
           I am interested in understanding how businesses work,
           what customers want and what the numbers reveal.
         </p>
-
         <p>
           I enjoy asking questions, finding relevant information
           and organising it into something clear and useful.
@@ -86,7 +74,7 @@
       </div>
     </section>
 
-    <section class="content-section services-section" id="services">
+    <section class="content-section" id="services">
       <div class="section-heading">
         <p class="section-label">Services</p>
         <h2>How I can help.</h2>
@@ -95,48 +83,39 @@
       <div class="services-list">
         <article class="service-item">
           <h3>Business research</h3>
-          <p>
-            Research into businesses, markets and competitors.
-          </p>
+          <p>Research into businesses, markets and competitors.</p>
         </article>
 
         <article class="service-item">
           <h3>Data organisation</h3>
-          <p>
-            Collecting, cleaning and organising information.
-          </p>
+          <p>Collecting, cleaning and organising information.</p>
         </article>
 
         <article class="service-item">
           <h3>Analysis and reporting</h3>
-          <p>
-            Turning findings into clear reports and useful insights.
-          </p>
+          <p>Turning findings into clear reports and useful insights.</p>
         </article>
       </div>
     </section>
 
-    <section class="content-section research-section">
+    <section class="content-section">
       <div class="section-heading">
         <p class="section-label">Selected work</p>
         <h2>Questions worth investigating.</h2>
       </div>
 
       <div class="project-preview">
-        <div>
-          <p class="project-category">Research project</p>
-          <h3>ChatGPT use in Nigeria</h3>
-          <p>
-            Exploring how people use generative AI and what this
-            could mean for consumers and businesses.
-          </p>
-        </div>
-
+        <p class="project-category">Research project</p>
+        <h3>ChatGPT use in Nigeria</h3>
+        <p>
+          Exploring how people use generative AI and what this
+          could mean for consumers and businesses.
+        </p>
         <a href="research.html" class="text-link">View project</a>
       </div>
     </section>
 
-    <section class="content-section contact-section" id="contact">
+    <section class="content-section" id="contact">
       <div class="section-heading">
         <p class="section-label">Contact</p>
         <h2>Have a question worth exploring?</h2>
@@ -147,24 +126,17 @@
           If you need help with research, data collection or analysis,
           I would be happy to hear from you.
         </p>
-
-        <a
-          class="contact-email"
-          href="mailto:YOUR-EMAIL@example.com"
-        >
-          Email me
-        </a>
+        <a class="contact-email" href="mailto:YOUR-EMAIL@example.com">Email me</a>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="index.html">ZayyLovesData<span>.</span></a>
+    <a class="brand footer-brand" href="index.html">ZayyLovesData<span>.</span></a>
     <p>© <span id="current-year"></span> ZayyLovesData</p>
   </footer>
 
-  <!-- WhatsApp contact -->
   <a
     class="whatsapp-float"
     href="https://wa.me/2348101891930?text=Hello%20Zainab%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20make%20an%20enquiry."
